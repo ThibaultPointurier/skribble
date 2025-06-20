@@ -1,0 +1,33 @@
+<div id="tools" class="flex flex-wrap items-center gap-2 p-2 rounded-lg bg-gradient-to-r from-indigo-100 to-pink-100 shadow-md animate__animated animate__fadeInUp mt-1" style="display: none;">
+  <button id="clearBtn" class="tool-btn bg-red-100 text-red-700 hover:bg-red-200 rounded px-2 py-1 text-sm font-semibold shadow transition-transform duration-150 active:scale-95">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" class="inline mr-1">
+      <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5zm-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5zM4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06zm6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528zM8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5z"/>
+    </svg>
+    Effacer
+  </button>
+  <button id="penBtn" class="tool-btn bg-indigo-100 text-indigo-700 hover:bg-indigo-200 rounded px-2 py-1 text-sm font-semibold shadow transition-transform duration-150 active:scale-95 active">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" class="inline mr-1">
+      <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+    </svg>
+    Stylo
+  </button>
+  <button id="eraserBtn" class="tool-btn bg-gray-100 text-gray-700 hover:bg-gray-200 rounded px-2 py-1 text-sm font-semibold shadow transition-transform duration-150 active:scale-95">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" class="inline mr-1">
+      <path d="M8.086 2.207a2 2 0 0 1 2.828 0l3.879 3.879a2 2 0 0 1 0 2.828l-5.5 5.5A2 2 0 0 1 7.879 15H5.12a2 2 0 0 1-1.414-.586l-2.5-2.5a2 2 0 0 1 0-2.828l6.879-6.879zm.66 11.34L3.453 8.254 1.914 9.793a1 1 0 0 0 0 1.414l2.5 2.5a1 1 0 0 0 .707.293H7.88a1 1 0 0 0 .707-.293l.16-.16z"/>
+    </svg>
+    Gomme
+  </button>
+  <div class="flex items-center gap-2 ml-4">
+    <label for="penWidth" class="text-sm font-medium text-gray-700">Épaisseur</label>
+    <input id="penWidth" type="range" min="1" max="30" value="3" class="w-24">
+    <span id="penWidthValue" class="text-sm text-gray-700">3</span>
+  </div>
+  <div class="ml-auto flex gap-1">
+    <button class="color-btn w-6 h-6 rounded-full border-2 border-white shadow cursor-pointer transition-all duration-150 ring-2 ring-indigo-400" style="background:#000;" data-color="#000"></button>
+    <button class="color-btn w-6 h-6 rounded-full border-2 border-white shadow cursor-pointer transition-all duration-150" style="background:#e74c3c;" data-color="#e74c3c"></button>
+    <button class="color-btn w-6 h-6 rounded-full border-2 border-white shadow cursor-pointer transition-all duration-150" style="background:#3498db;" data-color="#3498db"></button>
+    <button class="color-btn w-6 h-6 rounded-full border-2 border-white shadow cursor-pointer transition-all duration-150" style="background:#27ae60;" data-color="#27ae60"></button>
+    <button class="color-btn w-6 h-6 rounded-full border-2 border-white shadow cursor-pointer transition-all duration-150" style="background:#f1c40f;" data-color="#f1c40f"></button>
+    <button class="color-btn w-6 h-6 rounded-full border-2 border-white shadow cursor-pointer transition-all duration-150" style="background:#9b59b6;" data-color="#9b59b6"></button>
+  </div>
+</div>

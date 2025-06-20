@@ -1,0 +1,15 @@
+<div class="rounded-2xl bg-white/80 shadow-lg p-5 animate__animated animate__fadeIn">
+  <h3 class="text-xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-pink-500">
+    Joueurs
+  </h3>
+  <ul id="playersList" class="flex flex-col gap-2">
+    @each(player in players)
+      <li class="player-item @if(player.isDrawing) player-drawer @end">
+        <div>
+          {{ player.name }} @if(player.isDrawing) ✏️ @end @if(player.isCreator) 👑 @end
+        </div>
+        <div class="score">{{ player.score }} pts</div>
+      </li>
+    @endeach
+  </ul>
+</div>
